@@ -25,7 +25,7 @@ class TrainsTableSeeder extends Seeder
         $train->arrival = $train->departure;
         $train->train_number = $faker->randomNumber(7, false);
         $train->couch = $faker->numberBetween(2, 50);
-        $train->price = $faker->randomFloat(2, 400, 10000);
+        $train->price = $faker->randomFloat(2, 200, 10000);
         $train->save();
     }
 }
