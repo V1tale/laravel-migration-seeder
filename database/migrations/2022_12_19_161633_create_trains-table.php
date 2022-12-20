@@ -18,10 +18,10 @@ return new class extends Migration
             $table->string('company', 30);
             $table->string('from', 30);
             $table->string('destination', 30);
-            $table->string('departure', 10);
-            $table->string('arriving', 10);
+            $table->dateTime('departure');
+            $table->dateTime('arrival');
             $table->string('train_number', 1000);
-            $table->string('vagons', 100);
+            $table->string('couch', 100);
             $table->decimal('price', 10, 2);
         });
     }

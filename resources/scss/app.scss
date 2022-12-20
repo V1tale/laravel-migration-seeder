@@ -1,11 +1,26 @@
 @import '~bootstrap/scss/bootstrap';
 
-
-li {
-    list-style-type: none;
+h3 {
+    font-size:.8rem;
+}
+tbody {
+        background-color: rgb(202, 202, 202);
+    & td {
+        padding:5px;
+        border: 1px solid black;
+    }
+}
+ thead {
+    background-color: rgb(224, 84, 84);
+    color:white;
+    & th {
+        border: 1px solid black;
+        padding:5px;
+    }
+}
+table {
+    width: 100%;
+    max-width:1000px;
 }
 
-.container {
-    background-color: black;
-}
 

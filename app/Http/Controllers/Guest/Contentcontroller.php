@@ -11,6 +11,7 @@ class Contentcontroller extends Controller
     public function index()
     {
         $trains = Train::all();
+        // $trains = Train::where('departure', '>=', now())->get();
         return view('trains', compact('trains'));
     }
 }
